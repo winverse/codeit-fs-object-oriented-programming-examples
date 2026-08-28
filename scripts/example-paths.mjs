@@ -1,0 +1,21 @@
+export const examplePaths = [
+  "src/1-03-oop-intro/index.js",
+  "src/1-04-object-literal/index.js",
+  "src/1-05-factory-function/index.js",
+  "src/1-06-constructor-function/index.js",
+  "src/1-07-class/index.js",
+  "src/2-03-abstraction/index.js",
+  "src/2-05-encapsulation/index.js",
+  "src/2-07-encapsulation-closure/index.js",
+  "src/2-08-inheritance/index.js",
+  "src/2-10-super/index.js",
+  "src/2-11-polymorphism/index.js",
+  "src/2-13-super-method/index.js",
+  "src/2-14-instanceof/index.js",
+  "src/2-15-static/index.js",
+  "src/2-16-summary/index.js",
+  "src/3-02-singleton/index.js",
+  "src/3-04-simple-factory/index.js",
+  "src/3-06-strategy/index.js",
+  "src/3-08-observer/index.js"
+];

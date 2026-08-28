@@ -1,0 +1,55 @@
+# Object-Oriented Programming - JS Starter
+
+이 저장소는 Codeit 풀스택 15기 31번 토픽의 강의 개념 예제를 실행하는 starter입니다.
+
+직접 문제를 해결하는 활동은 별도 [practice 저장소](https://github.com/winverse/codeit-fs-object-oriented-programming-practice)에서 진행합니다. 이 starter에는 practice의 TODO, 정답, 문제 테스트를 포함하지 않습니다.
+
+## 시작 상태
+
+- 각 폴더는 서로 독립적으로 실행할 수 있는 강의 개념 예제입니다.
+- 폴더 번호는 31번 토픽의 대단원-강의 항목 번호와 같습니다.
+- 예제 파일은 완결된 실행 단위이며, 한 예제의 상태가 다음 예제로 누적되지 않습니다.
+
+## 실행
+
+모든 예제가 오류 없이 실행되는지 확인합니다.
+
+```bash
+npm test
+```
+
+모든 예제의 출력을 순서대로 확인합니다.
+
+```bash
+npm run examples
+```
+
+하나의 예제만 확인하려면 해당 파일을 직접 실행합니다.
+
+```bash
+node src/1-03-oop-intro/index.js
+```
+
+## 예제 구성
+
+| 단원 | 강의 항목 | 경로 |
+| --- | --- | --- |
+| 1장 | 03. 객체 지향 프로그래밍이란 | `src/1-03-oop-intro` |
+| 1장 | 04. 객체 리터럴 | `src/1-04-object-literal` |
+| 1장 | 05. 팩토리 함수 | `src/1-05-factory-function` |
+| 1장 | 06. 생성자 함수 | `src/1-06-constructor-function` |
+| 1장 | 07. 클래스 | `src/1-07-class` |
+| 2장 | 03. 추상화 | `src/2-03-abstraction` |
+| 2장 | 05. 캡슐화 | `src/2-05-encapsulation` |
+| 2장 | 07. 클로저 캡슐화 | `src/2-07-encapsulation-closure` |
+| 2장 | 08. 상속 | `src/2-08-inheritance` |
+| 2장 | 10. super | `src/2-10-super` |
+| 2장 | 11. 다형성 | `src/2-11-polymorphism` |
+| 2장 | 13. 부모 클래스 메서드 재사용 | `src/2-13-super-method` |
+| 2장 | 14. instanceof | `src/2-14-instanceof` |
+| 2장 | 15. static 프로퍼티와 메서드 | `src/2-15-static` |
+| 2장 | 16. 객체 지향 핵심 개념 요약 | `src/2-16-summary` |
+| 3장 | 02. 싱글턴 패턴 | `src/3-02-singleton` |
+| 3장 | 04. 단순 팩토리 패턴 | `src/3-04-simple-factory` |
+| 3장 | 06. 전략 패턴 | `src/3-06-strategy` |
+| 3장 | 08. 옵저버 패턴 | `src/3-08-observer` |
