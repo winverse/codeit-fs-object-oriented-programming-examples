@@ -1,8 +1,8 @@
-# Object-Oriented Programming - JS Starter
+# Object-Oriented Programming - JS Examples
 
-이 저장소는 Codeit 풀스택 15기 31번 토픽의 강의 개념 예제를 실행하는 starter입니다.
+이 저장소는 Codeit 풀스택 15기 31번 토픽의 강의 개념 예제 모음입니다.
 
-직접 문제를 해결하는 활동은 별도 [practice 저장소](https://github.com/winverse/codeit-fs-object-oriented-programming-practice)에서 진행합니다. 이 starter에는 practice의 TODO, 정답, 문제 테스트를 포함하지 않습니다.
+직접 문제를 해결하는 활동은 별도 [practice 저장소](https://github.com/winverse/codeit-fs-object-oriented-programming-practice)에서 진행합니다. 이 저장소에는 practice의 TODO, 정답, 문제 테스트를 포함하지 않습니다.
 
 ## 시작 상태
 
@@ -28,6 +28,12 @@ npm run examples
 
 ```bash
 node src/1-03-oop-intro/index.js
+```
+
+`super()`를 생략했을 때의 오류는 별도 파일로 확인합니다. 이 파일은 의도한 `ReferenceError`로 종료됩니다.
+
+```bash
+node src/2-10-super/error.js
 ```
 
 ## 예제 구성

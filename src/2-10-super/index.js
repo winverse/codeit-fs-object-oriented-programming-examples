@@ -12,23 +12,15 @@ class User {
   get email() {
     return this.#email;
   }
-}
 
-class InvalidPremiumUser extends User {
-  #level;
+  get birthdate() {
+    return this.#birthdate;
+  }
 
-  constructor(email, birthdate, level) {
-    try {
-      this.#level = level;
-    } catch (error) {
-      console.log(error.name); // ReferenceError
-    }
-
-    super(email, birthdate);
+  buy(item) {
+    console.log(`${this.email} buys ${item.name}`);
   }
 }
-
-new InvalidPremiumUser("chris@google.com", "1992-03-21", 3);
 
 class PremiumUser extends User {
   #level;
@@ -41,13 +33,21 @@ class PremiumUser extends User {
   get level() {
     return this.#level;
   }
+
+  streamMusicForFree() {
+    console.log(`Free music streaming for ${this.email}`);
+  }
 }
 
-const premiumUser = new PremiumUser(
-  "chris@google.com",
+const item = { name: "스웨터", price: 30_000 };
+const pUser1 = new PremiumUser(
+  "chris123@google.com",
   "1992-03-21",
   3,
 );
 
-console.log(premiumUser.email); // chris@google.com
-console.log(premiumUser.level); // 3
+console.log(pUser1.email); // chris123@google.com
+console.log(pUser1.birthdate); // 1992-03-21
+console.log(pUser1.level); // 3
+pUser1.buy(item); // chris123@google.com buys 스웨터
+pUser1.streamMusicForFree(); // Free music streaming for chris123@google.com

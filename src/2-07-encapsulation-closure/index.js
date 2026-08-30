@@ -22,10 +22,10 @@ function createUser(email, birthdate) {
   };
 }
 
-const user1 = createUser("chris123@google.com", "1992-03-21");
+const closureUser = createUser("chris123@google.com", "1992-03-21");
 
-console.log(user1.email);  // "chris123@google.com"
-console.log(user1._email); // undefined (클로저 변수라 외부 접근 불가)
+console.log(closureUser.email); // chris123@google.com
+console.log(closureUser._email); // undefined
 
 // ─────────────────────────────────────
 // 내부 함수까지 숨기기
@@ -57,15 +57,15 @@ function createUserWithPoint(email, birthdate) {
 }
 
 const item = { name: "스웨터", price: 30_000 };
-const user2 = createUserWithPoint("chris123@google.com", "1992-03-21");
+const user1 = createUserWithPoint("chris123@google.com", "1992-03-21");
 
-user2.buy(item);
-user2.buy(item);
-user2.buy(item);
-console.log(user2.point); // 3
+user1.buy(item);
+user1.buy(item);
+user1.buy(item);
+console.log(user1.point); // 3
 
 try {
-  user2.increasePoint(); // ❌ TypeError: user2.increasePoint is not a function
+  user1.increasePoint(); // TypeError: user1.increasePoint is not a function
 } catch (error) {
-  console.log(error.message); // "user2.increasePoint is not a function"
+  console.log(error.message); // user1.increasePoint is not a function
 }

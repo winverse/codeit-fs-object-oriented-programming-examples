@@ -13,3 +13,15 @@ for (const examplePath of examplePaths) {
     assert.equal(result.signal, null);
   });
 }
+
+test("src/2-10-super/error.js는 super() 생략 오류를 재현", () => {
+  const result = spawnSync(
+    process.execPath,
+    ["src/2-10-super/error.js"],
+    { encoding: "utf8" },
+  );
+
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /ReferenceError/);
+  assert.match(result.stderr, /super constructor/);
+});

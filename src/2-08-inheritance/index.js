@@ -38,13 +38,3 @@ class PremiumUser extends User {
     console.log(`Free music streaming for ${this.email}`);
   }
 }
-
-const item = { name: "스웨터", price: 30_000 };
-
-const user1 = new User("chris123@google.com", "1992-03-21");
-const pUser1 = new PremiumUser("niceguy@google.com", "1989-12-07", 3);
-
-user1.buy(item);             // "chris123@google.com buys 스웨터"
-pUser1.buy(item);            // "niceguy@google.com buys 스웨터" (부모에서 상속)
-pUser1.streamMusicForFree(); // "Free music streaming for niceguy@google.com"
-console.log(pUser1.level);   // 3
