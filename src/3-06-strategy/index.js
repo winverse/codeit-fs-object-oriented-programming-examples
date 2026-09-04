@@ -36,12 +36,12 @@ class Checkout {
 
 const checkout = new Checkout(new CardPayment());
 checkout.pay(30_000);
-// "카드사 PG API 호출 — 30000원 결제 요청"
+// 카드사 PG API 호출 — 30000원 결제 요청
 
 checkout.setPaymentStrategy(new KakaoPayment());
 checkout.pay(30_000);
-// "카카오페이 API 호출 — 30000원 결제 요청"
+// 카카오페이 API 호출 — 30000원 결제 요청
 
 checkout.setPaymentStrategy(new NaverPayment());
 checkout.pay(30_000);
-// "네이버페이 API 호출 — 30000원 결제 요청"
+// 네이버페이 API 호출 — 30000원 결제 요청

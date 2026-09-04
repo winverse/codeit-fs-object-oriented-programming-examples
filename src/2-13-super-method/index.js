@@ -53,5 +53,5 @@ class PremiumUser extends User {
 const item = { name: "스웨터", price: 30_000 };
 const pUser1 = new PremiumUser("chris123@google.com", "1992-03-21", 3, 0);
 
-pUser1.buy(item);             // "chris123@google.com buys 스웨터"
+pUser1.buy(item);             // chris123@google.com buys 스웨터
 console.log(pUser1.point);   // 1500 (30_000 * 0.05)

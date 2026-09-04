@@ -78,6 +78,6 @@ const restored = User.fromJSON(
   '{"email":"bob@google.com","birthdate":"1995-11-30","role":"normal"}',
 );
 
-console.log(normalUser.role); // "normal"
-console.log(adminUser.role);  // "admin"
-console.log(restored.email);  // "bob@google.com"
+console.log(normalUser.role); // normal
+console.log(adminUser.role);  // admin
+console.log(restored.email);  // bob@google.com

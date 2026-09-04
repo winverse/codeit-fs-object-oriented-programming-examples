@@ -1,4 +1,4 @@
-// 3-02. 싱글톤 패턴, Singleton
+// 3-02. 싱글턴 패턴, Singleton
 
 class DatabasePool {
   static #instance = null;
@@ -36,7 +36,7 @@ const pool1 = DatabasePool.getInstance(
 const pool2 = DatabasePool.getInstance(
   "postgresql://localhost:5432/mydb",
 );
-// 두 번째 호출: DB 연결 생성 메시지가 출력되지 않습니다
+// 두 번째 호출: DB pool 생성 메시지가 출력되지 않습니다
 
 console.log(pool1 === pool2); // true
 

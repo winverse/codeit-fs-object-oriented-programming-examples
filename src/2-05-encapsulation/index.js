@@ -61,12 +61,12 @@ class User {
 
 const user1 = new User("chris123@google.com", "1992-03-21");
 user1.email = "newChris123@google.com"; // setter 실행 → 정상 저장
-console.log(user1.email);               // getter 실행 → "newChris123@google.com"
+console.log(user1.email);               // getter 실행 → newChris123@google.com
 
 try {
   user1.email = "chris robert"; // setter 실행 → "@" 없음 → 에러 발생!
 } catch (error) {
-  console.log(error.message); // "invalid email address"
+  console.log(error.message); // invalid email address
 }
 
 // ─────────────────────────────────────

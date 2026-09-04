@@ -1,6 +1,6 @@
 # Object-Oriented Programming - JS Examples
 
-이 저장소는 Codeit 풀스택 15기 31번 토픽의 강의 개념 예제 모음입니다.
+이 저장소는 객체 지향 프로그래밍 강의의 독립 개념 예제 모음입니다.
 
 직접 문제를 해결하는 활동은 별도 [practice 저장소](https://github.com/winverse/codeit-fs-object-oriented-programming-practice)에서 진행합니다. 이 저장소에는 practice의 TODO, 정답, 문제 테스트를 포함하지 않습니다.
 
@@ -15,13 +15,13 @@
 모든 예제가 오류 없이 실행되는지 확인합니다.
 
 ```bash
-npm test
+pnpm test
 ```
 
 모든 예제의 출력을 순서대로 확인합니다.
 
 ```bash
-npm run examples
+pnpm examples
 ```
 
 하나의 예제만 확인하려면 해당 파일을 직접 실행합니다.

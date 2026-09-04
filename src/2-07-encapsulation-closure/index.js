@@ -4,9 +4,9 @@
 // 클로저로 상태를 숨기는 기본 구조
 // ─────────────────────────────────────
 function createUser(email, birthdate) {
-  let _email = email;
+  let _email;
 
-  return {
+  const user = {
     birthdate,
 
     get email() {
@@ -20,6 +20,9 @@ function createUser(email, birthdate) {
       _email = address;
     },
   };
+
+  user.email = email;
+  return user;
 }
 
 const closureUser = createUser("chris123@google.com", "1992-03-21");

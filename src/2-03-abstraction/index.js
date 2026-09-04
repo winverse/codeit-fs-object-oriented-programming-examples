@@ -18,9 +18,9 @@ class User {
 
 // 병원 예약 서비스의 Patient
 class Patient {
-  constructor(name, residentNumber, symptom) {
+  constructor(name, patientId, symptom) {
     this.name = name;
-    this.residentNumber = residentNumber;
+    this.patientId = patientId;
     this.symptom = symptom;
   }
 
@@ -46,4 +46,4 @@ class Member {
 // ─────────────────────────────────────
 const item = { name: "스웨터", price: 30_000 };
 const user1 = new User("chris123@google.com", "1992-03-21");
-user1.buy(item); // "chris123@google.com buys 스웨터"
+user1.buy(item); // chris123@google.com buys 스웨터

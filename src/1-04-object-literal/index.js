@@ -16,9 +16,9 @@ const item = {
   price: 30_000,
 };
 
-console.log(user.email);    // "chris123@google.com"
-console.log(user.birthdate); // "1992-03-21"
-user.buy(item);              // "chris123@google.com buys 스웨터"
+console.log(user.email);    // chris123@google.com
+console.log(user.birthdate); // 1992-03-21
+user.buy(item);              // chris123@google.com buys 스웨터
 
 // ─────────────────────────────────────
 // this를 활용한 함수 재사용
@@ -30,5 +30,5 @@ function introduce() {
 const user1 = { name: "Chris", introduce: introduce };
 const user2 = { name: "Alice", introduce: introduce };
 
-user1.introduce(); // "Hello, I am Chris"
-user2.introduce(); // "Hello, I am Alice"
+user1.introduce(); // Hello, I am Chris
+user2.introduce(); // Hello, I am Alice
