@@ -1,4 +1,4 @@
-// 2-14. instanceof 연산자
+// 2-11. instanceof 연산자
 
 class User {
   #email;
@@ -52,10 +52,20 @@ const users = [user1, pUser1, user2, pUser2, user3, pUser3];
 users.forEach((user) => {
   console.log(user instanceof PremiumUser);
 });
-// 출력: false, true, false, true, false, true
+// false
+// true
+// false
+// true
+// false
+// true
 
 // 자식은 부모로도 true
 users.forEach((user) => {
   console.log(user instanceof User);
 });
-// 출력: true, true, true, true, true, true
+// true
+// true
+// true
+// true
+// true
+// true

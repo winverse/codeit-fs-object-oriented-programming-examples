@@ -1,4 +1,4 @@
-// 2-11. 다형성
+// 2-12. 다형성
 
 class User {
   #email;
@@ -34,8 +34,8 @@ class PremiumUser extends User {
     return this.#level;
   }
 
-  // 오버라이딩: 부모의 buy를 덮어씁니다
   buy(item) {
+    // 부모의 buy를 오버라이딩합니다
     console.log(`${this.email} buys ${item.name} with a 5% discount`);
   }
 

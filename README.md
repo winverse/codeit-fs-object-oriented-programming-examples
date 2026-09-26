@@ -50,11 +50,11 @@ node src/2-10-super/error.js
 | 2장 | 07. 클로저 캡슐화 | `src/2-07-encapsulation-closure` |
 | 2장 | 08. 상속 | `src/2-08-inheritance` |
 | 2장 | 10. super | `src/2-10-super` |
-| 2장 | 11. 다형성 | `src/2-11-polymorphism` |
-| 2장 | 13. 부모 클래스 메서드 재사용 | `src/2-13-super-method` |
-| 2장 | 14. instanceof | `src/2-14-instanceof` |
+| 2장 | 11. instanceof | `src/2-11-instanceof` |
+| 2장 | 12. 다형성 | `src/2-12-polymorphism` |
+| 2장 | 14. 부모 클래스 메서드 재사용 | `src/2-14-super-method` |
 | 2장 | 15. static 프로퍼티와 메서드 | `src/2-15-static` |
-| 2장 | 16. 객체 지향 핵심 개념 요약 | `src/2-16-summary` |
+| 2장 | 17. 객체 지향 핵심 개념 요약 | `src/2-17-summary` |
 | 3장 | 02. 싱글턴 패턴 | `src/3-02-singleton` |
 | 3장 | 04. 단순 팩토리 패턴 | `src/3-04-simple-factory` |
 | 3장 | 06. 전략 패턴 | `src/3-06-strategy` |
