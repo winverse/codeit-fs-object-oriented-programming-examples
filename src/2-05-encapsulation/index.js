@@ -64,7 +64,7 @@ user1.email = "newChris123@google.com"; // setter 실행 → 정상 저장
 console.log(user1.email);               // getter 실행 → newChris123@google.com
 
 try {
-  user1.email = "chris robert"; // setter 실행 → "@" 없음 → 에러 발생!
+  user1.email = "chris robert"; // setter 실행 → "@" 없음 → 오류 발생!
 } catch (error) {
   console.log(error.message); // invalid email address
 }
@@ -95,5 +95,5 @@ const userByMethod = new UserWithMethods(
   "chris123@google.com",
 );
 
-console.log(userByMethod.getEmail());
-userByMethod.setEmail("newChris123@google.com");
+console.log(userByMethod.getEmail()); // 메서드 호출로 읽기 → chris123@google.com
+userByMethod.setEmail("newChris123@google.com"); // 메서드 호출로 쓰기

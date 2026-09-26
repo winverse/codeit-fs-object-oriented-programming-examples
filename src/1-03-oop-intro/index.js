@@ -3,8 +3,8 @@
 // ─────────────────────────────────────
 // 절차 지향 방식
 // ─────────────────────────────────────
-let userEmail = "winverse@gmail.com";
-let userBirthdate = "1989-11-24";
+let userEmail = "chris123@google.com";
+let userBirthdate = "1992-03-21";
 
 let itemName = "스웨터";
 let itemPrice = 30_000;
@@ -13,15 +13,16 @@ function buyItem(email, name) {
   console.log(`${email} buys ${name}`);
 }
 
-buyItem(userEmail, itemName); // winverse@gmail.com buys 스웨터
+buyItem(userEmail, itemName); // chris123@google.com buys 스웨터
 
 // ─────────────────────────────────────
 // 객체 지향 방식
 // ─────────────────────────────────────
 const user = {
-  email: "winverse@gmail.com",
-  birthdate: "1989-11-24",
+  email: "chris123@google.com",
+  birthdate: "1992-03-21",
   buy(item) {
+    // this는 buy를 호출한 user 객체를 가리킵니다
     console.log(`${this.email} buys ${item.name}`);
   },
 };
@@ -31,4 +32,4 @@ const item = {
   price: 30_000,
 };
 
-user.buy(item); // winverse@gmail.com buys 스웨터
+user.buy(item); // chris123@google.com buys 스웨터

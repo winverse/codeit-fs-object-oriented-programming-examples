@@ -2,7 +2,7 @@
 
 class CardPayment {
   pay(amount) {
-    console.log(`카드사 PG API 호출 — ${amount}원 결제 요청`);
+    console.log(`카드사 API 호출 — ${amount}원 결제 요청`);
   }
 }
 
@@ -36,7 +36,7 @@ class Checkout {
 
 const checkout = new Checkout(new CardPayment());
 checkout.pay(30_000);
-// 카드사 PG API 호출 — 30000원 결제 요청
+// 카드사 API 호출 — 30000원 결제 요청
 
 checkout.setPaymentStrategy(new KakaoPayment());
 checkout.pay(30_000);

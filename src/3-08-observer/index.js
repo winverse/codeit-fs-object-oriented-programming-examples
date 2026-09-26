@@ -40,7 +40,7 @@ class Product {
   }
 
   subscribe(subscriber) {
-    this.#subscribers = [...this.#subscribers, subscriber];
+    this.#subscribers.push(subscriber);
   }
 
   unsubscribe(subscriber) {
@@ -61,7 +61,7 @@ class Product {
   }
 }
 
-const jacket = new Product("겨울 자켓", 0);
+const jacket = new Product("겨울 재킷", 0);
 
 const emailUser = new EmailSubscriber("chris@google.com");
 const smsUser = new SmsSubscriber("010-1234-5678");
@@ -70,10 +70,10 @@ jacket.subscribe(emailUser);
 jacket.subscribe(smsUser);
 
 jacket.setStock(10);
-// [이메일 → chris@google.com] "겨울 자켓" 재입고 알림
-// [SMS → 010-1234-5678] "겨울 자켓" 재입고 알림
+// [이메일 → chris@google.com] "겨울 재킷" 재입고 알림
+// [SMS → 010-1234-5678] "겨울 재킷" 재입고 알림
 
 jacket.unsubscribe(smsUser);
 jacket.setStock(0);
 jacket.setStock(5);
-// [이메일 → chris@google.com] "겨울 자켓" 재입고 알림
+// [이메일 → chris@google.com] "겨울 재킷" 재입고 알림

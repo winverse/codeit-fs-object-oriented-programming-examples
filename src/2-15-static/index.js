@@ -15,6 +15,18 @@ console.log(MathUtils.PI);              // 3.14
 console.log(MathUtils.getCircleArea(5)); // 78.5
 
 // ─────────────────────────────────────
+// 인스턴스로 static 프로퍼티와 static 메서드에 접근하기
+// ─────────────────────────────────────
+const utils = new MathUtils();
+console.log(utils.PI); // undefined
+
+try {
+  utils.getCircleArea(5); // TypeError: utils.getCircleArea is not a function
+} catch (error) {
+  console.log(error.message); // utils.getCircleArea is not a function
+}
+
+// ─────────────────────────────────────
 // 유틸리티 클래스 패턴: Validator
 // ─────────────────────────────────────
 class Validator {
@@ -25,13 +37,9 @@ class Validator {
   static isValidPrice(value) {
     return Number.isInteger(value) && value > 0;
   }
-
-  static isDateFormat(value) {
-    return /^\d{4}-\d{2}-\d{2}$/.test(value);
-  }
 }
 
-console.log(Validator.isEmail("chris@google.com")); // true
+console.log(Validator.isEmail("chris123@google.com")); // true
 console.log(Validator.isEmail("chris google"));     // false
 console.log(Validator.isValidPrice(30_000));        // true
 console.log(Validator.isValidPrice(-100));          // false
@@ -72,12 +80,12 @@ class User {
   }
 }
 
-const normalUser = User.createNormal("chris@google.com", "1992-03-21");
-const adminUser = User.createAdmin("alice@google.com", "1988-07-15");
+const normalUser = User.createNormal("chris123@google.com", "1992-03-21");
+const adminUser = User.createAdmin("alice@google.com", "1993-12-24");
 const restored = User.fromJSON(
-  '{"email":"bob@google.com","birthdate":"1995-11-30","role":"normal"}',
+  '{"email":"jerry99@google.com","birthdate":"1995-07-19","role":"normal"}',
 );
 
 console.log(normalUser.role); // normal
 console.log(adminUser.role);  // admin
-console.log(restored.email);  // bob@google.com
+console.log(restored.email);  // jerry99@google.com

@@ -27,8 +27,9 @@ class NotificationFactory {
 
   static create(channel) {
     const creator = NotificationFactory.#creators[channel];
-    if (!creator)
+    if (!creator) {
       throw new Error(`지원하지 않는 채널입니다: ${channel}`);
+    }
     return creator();
   }
 }
