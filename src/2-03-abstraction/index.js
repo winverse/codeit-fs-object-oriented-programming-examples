@@ -29,7 +29,7 @@ class Patient {
   }
 }
 
-// SNS 서비스의 Member
+// 소셜 미디어 서비스의 Member
 class Member {
   constructor(nickname, followerCount) {
     this.nickname = nickname;

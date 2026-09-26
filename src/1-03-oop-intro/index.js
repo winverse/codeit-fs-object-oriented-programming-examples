@@ -22,8 +22,7 @@ const user = {
   email: "chris123@google.com",
   birthdate: "1992-03-21",
   buy(item) {
-    // this는 buy를 호출한 user 객체를 가리킵니다
-    console.log(`${this.email} buys ${item.name}`);
+    console.log(`${user.email} buys ${item.name}`);
   },
 };
 

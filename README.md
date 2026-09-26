@@ -7,7 +7,7 @@
 ## 시작 상태
 
 - 각 폴더는 서로 독립적으로 실행할 수 있는 강의 개념 예제입니다.
-- 폴더 번호는 31번 토픽의 대단원-강의 항목 번호와 같습니다.
+- 폴더 번호는 교재의 장 번호와 항목 번호를 따릅니다.
 - 예제 파일은 완결된 실행 단위이며, 한 예제의 상태가 다음 예제로 누적되지 않습니다.
 
 ## 실행
@@ -38,24 +38,24 @@ node src/2-10-super/error.js
 
 ## 예제 구성
 
-| 단원 | 강의 항목 | 경로 |
+| 장 | 항목 | 경로 |
 | --- | --- | --- |
 | 1장 | 03. 객체 지향 프로그래밍이란 | `src/1-03-oop-intro` |
-| 1장 | 04. 객체 리터럴 | `src/1-04-object-literal` |
-| 1장 | 05. 팩토리 함수 | `src/1-05-factory-function` |
-| 1장 | 06. 생성자 함수 | `src/1-06-constructor-function` |
-| 1장 | 07. 클래스 | `src/1-07-class` |
+| 1장 | 04. 객체 만들기, 객체 리터럴 | `src/1-04-object-literal` |
+| 1장 | 05. 객체 만들기, 팩토리 함수 | `src/1-05-factory-function` |
+| 1장 | 06. 객체 만들기, 생성자 함수 | `src/1-06-constructor-function` |
+| 1장 | 07. 객체 만들기, 클래스 | `src/1-07-class` |
 | 2장 | 03. 추상화 | `src/2-03-abstraction` |
 | 2장 | 05. 캡슐화 | `src/2-05-encapsulation` |
-| 2장 | 07. 클로저 캡슐화 | `src/2-07-encapsulation-closure` |
+| 2장 | 07. 캡슐화 더 알아보기: 클로저(closure)로 구현하기 | `src/2-07-encapsulation-closure` |
 | 2장 | 08. 상속 | `src/2-08-inheritance` |
 | 2장 | 10. super | `src/2-10-super` |
-| 2장 | 11. instanceof | `src/2-11-instanceof` |
+| 2장 | 11. instanceof 연산자 | `src/2-11-instanceof` |
 | 2장 | 12. 다형성 | `src/2-12-polymorphism` |
-| 2장 | 14. 부모 클래스 메서드 재사용 | `src/2-14-super-method` |
-| 2장 | 15. static 프로퍼티와 메서드 | `src/2-15-static` |
-| 2장 | 17. 객체 지향 핵심 개념 요약 | `src/2-17-summary` |
-| 3장 | 02. 싱글턴 패턴 | `src/3-02-singleton` |
-| 3장 | 04. 단순 팩토리 패턴 | `src/3-04-simple-factory` |
-| 3장 | 06. 전략 패턴 | `src/3-06-strategy` |
-| 3장 | 08. 옵저버 패턴 | `src/3-08-observer` |
+| 2장 | 14. 부모 클래스 메서드 재사용하기 | `src/2-14-super-method` |
+| 2장 | 15. static 프로퍼티와 static 메서드 | `src/2-15-static` |
+| 2장 | 17. 객체 지향 핵심 개념 | `src/2-17-summary` |
+| 3장 | 02. 싱글턴 패턴, Singleton | `src/3-02-singleton` |
+| 3장 | 04. 단순 팩토리 패턴, Simple Factory | `src/3-04-simple-factory` |
+| 3장 | 06. 전략 패턴, Strategy | `src/3-06-strategy` |
+| 3장 | 08. 옵저버 패턴, Observer | `src/3-08-observer` |

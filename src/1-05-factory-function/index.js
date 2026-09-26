@@ -1,4 +1,4 @@
-// 1-05. 객체 만들기, Factory function
+// 1-05. 객체 만들기, 팩토리 함수
 
 function createUser(email, birthdate) {
   const user = {

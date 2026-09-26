@@ -1,4 +1,4 @@
-// 1-07. 객체 만들기, Class
+// 1-07. 객체 만들기, 클래스
 
 class User {
   constructor(email, birthdate) {

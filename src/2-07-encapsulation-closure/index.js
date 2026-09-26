@@ -1,4 +1,4 @@
-// 2-07. 캡슐화 더 알아보기 (클로저)
+// 2-07. 캡슐화 더 알아보기: 클로저(closure)로 구현하기
 
 // ─────────────────────────────────────
 // 클로저로 상태를 숨기는 기본 구조
@@ -62,9 +62,9 @@ function createUserWithPoint(email, birthdate) {
 const item = { name: "스웨터", price: 30_000 };
 const user1 = createUserWithPoint("chris123@google.com", "1992-03-21");
 
-user1.buy(item);
-user1.buy(item);
-user1.buy(item);
+user1.buy(item); // chris123@google.com buys 스웨터
+user1.buy(item); // chris123@google.com buys 스웨터
+user1.buy(item); // chris123@google.com buys 스웨터
 console.log(user1.point); // 3
 
 try {
