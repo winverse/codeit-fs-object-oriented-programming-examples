@@ -5,23 +5,26 @@ class DatabasePool {
   #connectionString;
 
   constructor(connectionString) {
+    // 1. 이미 인스턴스가 있으면 오류를 던져 두 번째 생성을 막습니다.
     if (DatabasePool.#instance) {
       throw new Error(
         "이미 인스턴스가 존재합니다. getInstance()를 사용하십시오.",
       );
     }
+    // 2. 연결 문자열을 저장하고 생성 메시지를 출력합니다.
     this.#connectionString = connectionString;
     console.log(`DB pool 생성: ${connectionString}`);
 
+    // 3. 방금 만든 인스턴스를 #instance에 저장합니다.
     DatabasePool.#instance = this;
   }
 
   static getInstance(connectionString) {
-    // 1. 아직 인스턴스가 없을 때만 새로 만듭니다.
+    // 4. 아직 인스턴스가 없을 때만 새로 만듭니다.
     if (DatabasePool.#instance === null) {
       new DatabasePool(connectionString);
     }
-    // 2. 저장해 둔 하나의 인스턴스를 반환합니다.
+    // 5. 저장해 둔 하나의 인스턴스를 반환합니다.
     return DatabasePool.#instance;
   }
 
