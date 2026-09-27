@@ -17,9 +17,11 @@ class DatabasePool {
   }
 
   static getInstance(connectionString) {
+    // 1. 아직 인스턴스가 없을 때만 새로 만듭니다.
     if (DatabasePool.#instance === null) {
       new DatabasePool(connectionString);
     }
+    // 2. 저장해 둔 하나의 인스턴스를 반환합니다.
     return DatabasePool.#instance;
   }
 

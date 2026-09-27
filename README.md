@@ -42,9 +42,9 @@ node src/2-10-super/error.js
 | --- | --- | --- |
 | 1장 | 03. 객체 지향 프로그래밍 | `src/1-03-oop-intro` |
 | 1장 | 04. 객체 만들기, 객체 리터럴 | `src/1-04-object-literal` |
-| 1장 | 05. 객체 만들기, 팩토리 함수 | `src/1-05-factory-function` |
-| 1장 | 06. 객체 만들기, 생성자 함수 | `src/1-06-constructor-function` |
-| 1장 | 08. 객체 만들기, 클래스 | `src/1-08-class` |
+| 1장 | 06. 객체 만들기, 팩토리 함수 | `src/1-06-factory-function` |
+| 1장 | 08. 객체 만들기, 생성자 함수 | `src/1-08-constructor-function` |
+| 1장 | 10. 객체 만들기, 클래스 | `src/1-10-class` |
 | 2장 | 03. 추상화 | `src/2-03-abstraction` |
 | 2장 | 05. 캡슐화 | `src/2-05-encapsulation` |
 | 2장 | 07. 캡슐화 더 알아보기: 클로저(closure)로 구현하기 | `src/2-07-encapsulation-closure` |
@@ -54,8 +54,8 @@ node src/2-10-super/error.js
 | 2장 | 12. 다형성 | `src/2-12-polymorphism` |
 | 2장 | 14. 부모 클래스 메서드 재사용하기 | `src/2-14-super-method` |
 | 2장 | 15. static 프로퍼티와 static 메서드 | `src/2-15-static` |
-| 2장 | 16. 유틸리티 클래스와 static factory method | `src/2-16-utility-static-factory` |
-| 2장 | 18. 객체 지향 핵심 개념 | `src/2-18-summary` |
+| 2장 | 17. 유틸리티 클래스와 static factory method | `src/2-17-utility-static-factory` |
+| 2장 | 19. 객체 지향 핵심 개념 | `src/2-19-summary` |
 | 3장 | 02. 싱글턴 패턴, Singleton | `src/3-02-singleton` |
 | 3장 | 04. 단순 팩토리 패턴, Simple Factory | `src/3-04-simple-factory` |
 | 3장 | 06. 전략 패턴, Strategy | `src/3-06-strategy` |

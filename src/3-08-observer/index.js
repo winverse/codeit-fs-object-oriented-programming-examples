@@ -52,9 +52,12 @@ class Product {
   }
 
   setStock(newStock) {
+    // 1. 바꾸기 전에 재고가 0이었는지 기억합니다.
     const wasOutOfStock = this.#stock === 0;
+    // 2. 새 재고로 바꿉니다.
     this.#stock = newStock;
 
+    // 3. 재고가 0에서 복구될 때만 모든 구독자에게 알립니다.
     if (wasOutOfStock && newStock > 0) {
       this.#notifyAll();
     }

@@ -41,8 +41,10 @@ class PremiumUser extends User {
   }
 
   buy(item) {
-    super.buy(item);                    // 부모의 buy 메서드를 그대로 실행
-    this.#point += item.price * 0.05;   // 그다음 포인트 적립
+    // 1. 부모의 buy 메서드를 그대로 실행합니다.
+    super.buy(item);
+    // 2. 그다음 포인트를 적립합니다.
+    this.#point += item.price * 0.05;
   }
 
   streamMusicForFree() {

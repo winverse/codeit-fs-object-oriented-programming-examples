@@ -26,8 +26,10 @@ class PremiumUser extends User {
   #level;
 
   constructor(email, birthdate, level) {
-    super(email, birthdate); // 부모 클래스의 constructor를 먼저 호출! email, birthdate 값을 그대로 넘겨줍니다
-    this.#level = level; // 그다음에 자식 고유 상태 설정
+    // 1. 부모 클래스의 constructor를 먼저 호출해 email, birthdate 값을 그대로 넘깁니다.
+    super(email, birthdate);
+    // 2. 그다음 자식 클래스의 고유 상태를 설정합니다.
+    this.#level = level;
   }
 
   get level() {
