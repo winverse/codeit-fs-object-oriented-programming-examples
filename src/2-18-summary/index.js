@@ -1,4 +1,4 @@
-// 2-17. 객체 지향 핵심 개념
+// 2-18. 객체 지향 핵심 개념
 // 상속과 다형성의 관계
 
 class User {
@@ -30,6 +30,7 @@ const users = [
 const item = { name: "스웨터" };
 
 console.log(users.map((user) => user.buy(item)));
+// 출력:
 // [
 //   'basic@shop.com buys 스웨터',
 //   'premium@shop.com buys 스웨터 with a 5% discount'
