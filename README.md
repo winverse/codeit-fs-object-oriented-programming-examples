@@ -47,7 +47,7 @@ node src/2-11-super/error.js
 | 1장 | 11. 객체 만들기, 클래스 | `src/1-11-class` |
 | 2장 | 03. 추상화 | `src/2-03-abstraction` |
 | 2장 | 05. 캡슐화 | `src/2-05-encapsulation` |
-| 2장 | 07. 캡슐화 더 알아보기: 클로저(closure)로 구현하기 | `src/2-07-encapsulation-closure` |
+| 2장 | 07. 캡슐화 더 알아보기: 클로저(Closure)로 구현하기 | `src/2-07-encapsulation-closure` |
 | 2장 | 09. 상속 | `src/2-09-inheritance` |
 | 2장 | 11. super | `src/2-11-super` |
 | 2장 | 13. instanceof 연산자 | `src/2-13-instanceof` |
