@@ -173,4 +173,23 @@
       return true;
     }
   }
+
+  const warrior = new Warrior({
+    name: "전사",
+    maxHp: 140,
+    mp: 30,
+    attackPower: 18,
+    potionCount: 2,
+  });
+  const mage = new Mage({
+    name: "마법사",
+    maxHp: 90,
+    mp: 60,
+    attackPower: 8,
+    potionCount: 0,
+  });
+
+  warrior.powerStrike(mage);
+  console.log(warrior.getStatus()); // 출력: 전사 | HP:140/140 MP:20 Potion:2
+  console.log(mage.getStatus()); // 출력: 마법사 | HP:54/90 MP:60 Potion:0
 }

@@ -16,7 +16,7 @@ class User {
   }
 }
 
-// 병원 예약 서비스의 Patient
+// 병원 예약 서비스의 Patient (환자)
 class Patient {
   constructor(name, patientId, symptom) {
     this.name = name;
@@ -29,7 +29,7 @@ class Patient {
   }
 }
 
-// 소셜 미디어 서비스의 Member
+// 소셜 미디어 서비스의 Member (회원)
 class Member {
   constructor(nickname, followerCount) {
     this.nickname = nickname;
