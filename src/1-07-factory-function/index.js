@@ -1,4 +1,4 @@
-// 1-06. 객체 만들기, 팩토리 함수
+// 1-07. 객체 만들기, 팩토리 함수
 
 function createUser(email, birthdate) {
   const user = {

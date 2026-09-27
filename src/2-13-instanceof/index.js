@@ -1,4 +1,4 @@
-// 2-11. instanceof 연산자
+// 2-13. instanceof 연산자
 
 class User {
   #email;

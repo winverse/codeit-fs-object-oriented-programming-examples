@@ -1,4 +1,4 @@
-// 1-08. 객체 만들기, 생성자 함수
+// 1-09. 객체 만들기, 생성자 함수
 
 function User(email, birthdate) {
   this.email = email;
