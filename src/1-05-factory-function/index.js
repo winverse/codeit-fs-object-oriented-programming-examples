@@ -29,7 +29,7 @@ user2.buy(item); // 출력: jerry99@google.com buys 스웨터
 user3.buy(item); // 출력: alice@google.com buys 스웨터
 
 // ─────────────────────────────────────
-// 메서드 함수 identity 확인
+// 메서드가 같은 함수 객체인지 확인
 // ─────────────────────────────────────
 console.log(user1.buy === user2.buy); // 출력: false
 console.log(user1.buy === user3.buy); // 출력: false

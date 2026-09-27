@@ -26,6 +26,6 @@ user1.buy(item); // 출력: chris123@google.com buys 스웨터
 user2.buy(item); // 출력: jerry99@google.com buys 스웨터
 
 // ─────────────────────────────────────
-// 메모리 효율 확인 (Factory function과 비교)
+// 팩토리 함수와 비교: 메서드 공유 확인
 // ─────────────────────────────────────
 console.log(user1.buy === user2.buy); // 출력: true
