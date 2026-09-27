@@ -70,10 +70,11 @@ jacket.subscribe(emailUser);
 jacket.subscribe(smsUser);
 
 jacket.setStock(10);
+// 출력:
 // [이메일 → chris@google.com] "겨울 재킷" 재입고 알림
 // [SMS → 010-1234-5678] "겨울 재킷" 재입고 알림
 
 jacket.unsubscribe(smsUser);
 jacket.setStock(0);
 jacket.setStock(5);
-// [이메일 → chris@google.com] "겨울 재킷" 재입고 알림
+// 출력: [이메일 → chris@google.com] "겨울 재킷" 재입고 알림

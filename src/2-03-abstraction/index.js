@@ -46,4 +46,4 @@ class Member {
 // ─────────────────────────────────────
 const item = { name: "스웨터", price: 30_000 };
 const user1 = new User("chris123@google.com", "1992-03-21");
-user1.buy(item); // chris123@google.com buys 스웨터
+user1.buy(item); // 출력: chris123@google.com buys 스웨터

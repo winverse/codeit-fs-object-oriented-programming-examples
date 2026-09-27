@@ -52,6 +52,7 @@ const users = [user1, pUser1, user2, pUser2, user3, pUser3];
 users.forEach((user) => {
   console.log(user instanceof PremiumUser);
 });
+// 출력:
 // false
 // true
 // false
@@ -63,6 +64,7 @@ users.forEach((user) => {
 users.forEach((user) => {
   console.log(user instanceof User);
 });
+// 출력:
 // true
 // true
 // true

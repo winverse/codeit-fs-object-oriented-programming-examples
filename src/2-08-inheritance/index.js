@@ -46,5 +46,5 @@ const pUser1 = new PremiumUser(
   3,
 );
 
-pUser1.buy(item); // chris123@google.com buys 스웨터
-pUser1.streamMusicForFree(); // Free music streaming for chris123@google.com
+pUser1.buy(item); // 출력: chris123@google.com buys 스웨터
+pUser1.streamMusicForFree(); // 출력: Free music streaming for chris123@google.com

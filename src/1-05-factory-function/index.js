@@ -20,16 +20,16 @@ const user1 = createUser("chris123@google.com", "1992-03-21");
 const user2 = createUser("jerry99@google.com", "1995-07-19");
 const user3 = createUser("alice@google.com", "1993-12-24");
 
-console.log(user1.email); // chris123@google.com
-console.log(user2.email); // jerry99@google.com
-console.log(user3.email); // alice@google.com
+console.log(user1.email); // 출력: chris123@google.com
+console.log(user2.email); // 출력: jerry99@google.com
+console.log(user3.email); // 출력: alice@google.com
 
-user1.buy(item); // chris123@google.com buys 스웨터
-user2.buy(item); // jerry99@google.com buys 스웨터
-user3.buy(item); // alice@google.com buys 스웨터
+user1.buy(item); // 출력: chris123@google.com buys 스웨터
+user2.buy(item); // 출력: jerry99@google.com buys 스웨터
+user3.buy(item); // 출력: alice@google.com buys 스웨터
 
 // ─────────────────────────────────────
 // 메서드 함수 identity 확인
 // ─────────────────────────────────────
-console.log(user1.buy === user2.buy); // false
-console.log(user1.buy === user3.buy); // false
+console.log(user1.buy === user2.buy); // 출력: false
+console.log(user1.buy === user3.buy); // 출력: false

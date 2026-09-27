@@ -1,4 +1,4 @@
-// 1-03. 객체 지향 프로그래밍이란
+// 1-03. 객체 지향 프로그래밍
 
 // ─────────────────────────────────────
 // 절차 지향 방식
@@ -13,7 +13,7 @@ function buyItem(email, name) {
   console.log(`${email} buys ${name}`);
 }
 
-buyItem(userEmail, itemName); // chris123@google.com buys 스웨터
+buyItem(userEmail, itemName); // 출력: chris123@google.com buys 스웨터
 
 // ─────────────────────────────────────
 // 객체 지향 방식
@@ -31,4 +31,4 @@ const item = {
   price: 30_000,
 };
 
-user.buy(item); // chris123@google.com buys 스웨터
+user.buy(item); // 출력: chris123@google.com buys 스웨터

@@ -46,8 +46,8 @@ const pUser1 = new PremiumUser(
   3,
 );
 
-console.log(pUser1.email); // chris123@google.com
-console.log(pUser1.birthdate); // 1992-03-21
-console.log(pUser1.level); // 3
-pUser1.buy(item); // chris123@google.com buys 스웨터
-pUser1.streamMusicForFree(); // Free music streaming for chris123@google.com
+console.log(pUser1.email); // 출력: chris123@google.com
+console.log(pUser1.birthdate); // 출력: 1992-03-21
+console.log(pUser1.level); // 출력: 3
+pUser1.buy(item); // 출력: chris123@google.com buys 스웨터
+pUser1.streamMusicForFree(); // 출력: Free music streaming for chris123@google.com
