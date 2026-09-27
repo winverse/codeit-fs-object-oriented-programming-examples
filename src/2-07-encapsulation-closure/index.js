@@ -47,7 +47,7 @@ function createUserWithPoint(email, birthdate) {
     _point += 1;
   }
 
-  // 3. increasePoint는 빼고 birthdate, getter, buy만 담은 객체를 반환합니다.
+  // 3. birthdate, getter, buy를 담은 객체를 반환합니다.
   return {
     birthdate,
 
