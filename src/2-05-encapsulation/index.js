@@ -18,6 +18,7 @@
   const user1 = new User("chris123@google.com", "1992-03-21");
 
   user1.email = "chris robert"; // 이메일 형식이 아닌 값을 대입하는 실수
+  console.log(user1.email); // 출력: chris robert
 }
 
 // ─────────────────────────────────────
