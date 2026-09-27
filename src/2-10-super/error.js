@@ -6,8 +6,8 @@ class PremiumUser extends User {
   #level;
 
   constructor(email, birthdate, level) {
-    // super(email, birthdate); // 생략
-    this.#level = level;
+    // super(email, birthdate); // ❌ 생략
+    this.#level = level; // 여기서 오류 발생
   }
 }
 

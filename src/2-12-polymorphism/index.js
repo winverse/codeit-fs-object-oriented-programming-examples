@@ -55,7 +55,6 @@ const pUser3 = new PremiumUser("aliceKim@google.com", "2001-07-22", 5);
 
 const users = [user1, pUser1, user2, pUser2, user3, pUser3];
 
-// 같은 코드지만 객체 타입에 따라 다르게 동작합니다
 users.forEach((user) => {
-  user.buy(item);
+  user.buy(item); // 같은 코드지만 객체 타입에 따라 다르게 동작!
 });

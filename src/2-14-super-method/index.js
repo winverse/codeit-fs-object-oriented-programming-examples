@@ -41,8 +41,8 @@ class PremiumUser extends User {
   }
 
   buy(item) {
-    super.buy(item);                    // 부모의 buy를 그대로 실행
-    this.#point += item.price * 0.05;   // 포인트 적립 추가
+    super.buy(item);                    // 부모의 buy 메서드를 그대로 실행
+    this.#point += item.price * 0.05;   // 그다음 포인트 적립
   }
 
   streamMusicForFree() {
@@ -53,5 +53,5 @@ class PremiumUser extends User {
 const item = { name: "스웨터", price: 30_000 };
 const pUser1 = new PremiumUser("chris123@google.com", "1992-03-21", 3, 0);
 
-pUser1.buy(item);             // 출력: chris123@google.com buys 스웨터
+pUser1.buy(item);             // 출력: chris123@google.com buys 스웨터 (부모 buy가 실행됨)
 console.log(pUser1.point);   // 출력: 1500 (30_000 * 0.05)

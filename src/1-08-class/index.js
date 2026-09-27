@@ -28,4 +28,4 @@ user2.buy(item); // 출력: jerry99@google.com buys 스웨터
 // ─────────────────────────────────────
 // 메모리 효율 확인 (Factory function과 비교)
 // ─────────────────────────────────────
-console.log(user1.buy === user2.buy); // 출력: true (prototype 공유)
+console.log(user1.buy === user2.buy); // 출력: true

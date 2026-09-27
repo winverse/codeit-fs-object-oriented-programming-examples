@@ -26,8 +26,8 @@ class PremiumUser extends User {
   #level;
 
   constructor(email, birthdate, level) {
-    super(email, birthdate);
-    this.#level = level;
+    super(email, birthdate); // 부모 클래스의 constructor를 먼저 호출! email, birthdate 값을 그대로 넘겨줍니다
+    this.#level = level; // 그다음에 자식 고유 상태 설정
   }
 
   get level() {
@@ -46,8 +46,8 @@ const pUser1 = new PremiumUser(
   3,
 );
 
-console.log(pUser1.email); // 출력: chris123@google.com
-console.log(pUser1.birthdate); // 출력: 1992-03-21
-console.log(pUser1.level); // 출력: 3
-pUser1.buy(item); // 출력: chris123@google.com buys 스웨터
+console.log(pUser1.email); // 출력: chris123@google.com (부모 클래스의 constructor가 설정)
+console.log(pUser1.birthdate); // 출력: 1992-03-21 (부모 클래스의 constructor가 설정)
+console.log(pUser1.level); // 출력: 3 (자식 클래스의 constructor가 설정)
+pUser1.buy(item); // 출력: chris123@google.com buys 스웨터 (부모에서 상속)
 pUser1.streamMusicForFree(); // 출력: Free music streaming for chris123@google.com

@@ -68,7 +68,7 @@ user1.buy(item); // 출력: chris123@google.com buys 스웨터
 console.log(user1.point); // 출력: 3
 
 try {
-  user1.increasePoint(); // TypeError: user1.increasePoint is not a function
+  user1.increasePoint(); // ❌ TypeError: user1.increasePoint is not a function
 } catch (error) {
   console.log(error.message); // 출력: user1.increasePoint is not a function
 }

@@ -1,13 +1,15 @@
 // 2-16. 유틸리티 클래스와 static factory method
 
 // ─────────────────────────────────────
-// 유틸리티 클래스 패턴: Validator
+// 유틸리티 클래스: Validator
 // ─────────────────────────────────────
 class Validator {
+  // 이메일 형식 검증
   static isEmail(value) {
     return typeof value === "string" && value.includes("@");
   }
 
+  // 가격 유효성 검증 (0보다 크고 정수여야 함)
   static isValidPrice(value) {
     return Number.isInteger(value) && value > 0;
   }
@@ -19,7 +21,7 @@ console.log(Validator.isValidPrice(30_000));        // 출력: true
 console.log(Validator.isValidPrice(-100));          // 출력: false
 
 // ─────────────────────────────────────
-// static factory method 패턴: User
+// static factory method: User
 // ─────────────────────────────────────
 class User {
   #email;
@@ -40,14 +42,17 @@ class User {
     return this.#role;
   }
 
+  // 일반 사용자를 만드는 static factory method
   static createNormal(email, birthdate) {
     return new User(email, birthdate, "normal");
   }
 
+  // 관리자를 만드는 static factory method
   static createAdmin(email, birthdate) {
     return new User(email, birthdate, "admin");
   }
 
+  // JSON 데이터에서 User 객체를 복원하는 static factory method
   static fromJSON(json) {
     const parsed = JSON.parse(json);
     return new User(parsed.email, parsed.birthdate, parsed.role);

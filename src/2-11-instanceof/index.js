@@ -60,6 +60,17 @@ users.forEach((user) => {
 // false
 // true
 
+// instanceof로 확인한 뒤 호출하기
+users.forEach((user) => {
+  if (user instanceof PremiumUser) {
+    user.streamMusicForFree();
+  }
+});
+// 출력:
+// Free music streaming for niceguy@google.com
+// Free music streaming for helloMike@google.com
+// Free music streaming for aliceKim@google.com
+
 // 자식은 부모로도 true
 users.forEach((user) => {
   console.log(user instanceof User);

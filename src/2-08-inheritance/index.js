@@ -26,7 +26,7 @@ class PremiumUser extends User {
   #level;
 
   constructor(email, birthdate, level) {
-    super(email, birthdate);
+    super(email, birthdate); // 부모 클래스의 constructor를 실행합니다
     this.#level = level;
   }
 

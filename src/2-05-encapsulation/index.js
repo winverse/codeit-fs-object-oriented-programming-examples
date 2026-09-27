@@ -48,7 +48,7 @@ class User {
 
   set email(address) {
     if (address.includes("@")) {
-      this.#email = address;
+      this.#email = address; // 검증 통과 시 #email에 저장
     } else {
       throw new Error("invalid email address");
     }
@@ -60,7 +60,7 @@ class User {
 }
 
 const user1 = new User("chris123@google.com", "1992-03-21");
-user1.email = "newChris123@google.com"; // setter 실행 → 정상 저장
+user1.email = "newChris123@google.com"; // setter 실행 → "@" 포함 → 정상 저장
 console.log(user1.email);               // getter 실행 → 출력: newChris123@google.com
 
 try {
