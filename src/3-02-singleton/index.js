@@ -11,6 +11,7 @@ class DatabasePool {
         "이미 인스턴스가 존재합니다. getInstance()를 사용하십시오.",
       );
     }
+
     // 2. 연결 문자열을 저장하고 생성 메시지를 출력합니다.
     this.#connectionString = connectionString;
     console.log(`DB pool 생성: ${connectionString}`);
@@ -39,7 +40,7 @@ const pool1 = DatabasePool.getInstance(
 // 출력: DB pool 생성: postgresql://localhost:5432/mydb
 
 const pool2 = DatabasePool.getInstance(
-  "postgresql://localhost:5432/mydb",
+  "postgresql://localhost:5432/mydb", // 인스턴스가 이미 있으므로 이 인수는 쓰이지 않습니다
 );
 // 두 번째 호출: DB pool 생성 메시지가 출력되지 않습니다
 

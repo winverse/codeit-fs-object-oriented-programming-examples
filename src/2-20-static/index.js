@@ -6,12 +6,13 @@
 class MathUtils {
   static PI = 3.14; // static 프로퍼티
 
+  // static 메서드
   static getCircleArea(radius) {
     return MathUtils.PI * radius * radius;
   }
 }
 
-console.log(MathUtils.PI);              // 출력: 3.14
+console.log(MathUtils.PI); // 출력: 3.14
 console.log(MathUtils.getCircleArea(5)); // 출력: 78.5 (3.14 * 5 * 5)
 
 // ─────────────────────────────────────

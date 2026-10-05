@@ -29,7 +29,10 @@ function createUser(email, birthdate) {
   return user;
 }
 
-const closureUser = createUser("chris123@google.com", "1992-03-21");
+const closureUser = createUser(
+  "chris123@google.com",
+  "1992-03-21",
+);
 
 console.log(closureUser.email); // 출력: chris123@google.com
 console.log(closureUser._email); // 출력: undefined
@@ -67,7 +70,10 @@ function createUserWithPoint(email, birthdate) {
 }
 
 const item = { name: "스웨터", price: 30_000 };
-const user1 = createUserWithPoint("chris123@google.com", "1992-03-21");
+const user1 = createUserWithPoint(
+  "chris123@google.com",
+  "1992-03-21",
+);
 
 user1.buy(item); // 출력: chris123@google.com buys 스웨터
 user1.buy(item); // 출력: chris123@google.com buys 스웨터

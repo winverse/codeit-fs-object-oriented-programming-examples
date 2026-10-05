@@ -1,5 +1,6 @@
 // 3-04. 단순 팩토리 패턴, Simple Factory
 
+// 각 알림 채널 클래스
 class EmailNotification {
   send(message) {
     console.log(`[이메일] ${message}`);
@@ -18,7 +19,9 @@ class PushNotification {
   }
 }
 
+// 단순 팩토리: 채널 이름을 받아 적절한 객체를 생성해 반환합니다
 class NotificationFactory {
+  // 채널에 대응하는 생성 함수를 객체로 관리합니다
   static #creators = {
     email: () => new EmailNotification(),
     sms: () => new SmsNotification(),
@@ -30,7 +33,9 @@ class NotificationFactory {
     const creator = NotificationFactory.#creators[channel];
     // 2. 등록되지 않은 채널이면 오류를 던집니다.
     if (!creator) {
-      throw new Error(`지원하지 않는 채널입니다: ${channel}`);
+      throw new Error(
+        `지원하지 않는 채널입니다: ${channel}`,
+      );
     }
     // 3. 찾은 생성 함수를 호출해 새 알림 객체를 반환합니다.
     return creator();

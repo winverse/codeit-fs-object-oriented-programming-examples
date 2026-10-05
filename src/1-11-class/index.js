@@ -25,8 +25,4 @@ console.log(user1.email); // 출력: chris123@google.com
 console.log(user2.birthdate); // 출력: 1995-07-19
 user1.buy(item); // 출력: chris123@google.com buys 스웨터
 user2.buy(item); // 출력: jerry99@google.com buys 스웨터
-
-// ─────────────────────────────────────
-// 팩토리 함수·생성자 함수와 비교: 메서드 공유 확인
-// ─────────────────────────────────────
 console.log(user1.buy === user2.buy); // 출력: true

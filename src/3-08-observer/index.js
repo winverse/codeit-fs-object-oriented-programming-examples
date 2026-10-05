@@ -1,12 +1,14 @@
 // 3-08. 옵저버 패턴, Observer
 
+// 구독자 역할을 하는 클래스들
 class EmailSubscriber {
   constructor(email) {
     this.email = email;
   }
-
   update(product) {
-    console.log(`[이메일 → ${this.email}] "${product.name}" 재입고 알림`);
+    console.log(
+      `[이메일 → ${this.email}] "${product.name}" 재입고 알림`,
+    );
   }
 }
 
@@ -14,12 +16,14 @@ class SmsSubscriber {
   constructor(phone) {
     this.phone = phone;
   }
-
   update(product) {
-    console.log(`[SMS → ${this.phone}] "${product.name}" 재입고 알림`);
+    console.log(
+      `[SMS → ${this.phone}] "${product.name}" 재입고 알림`,
+    );
   }
 }
 
+// 발행자: 구독자 목록을 관리하고 상태 변경 시 알립니다
 class Product {
   #name;
   #stock;
@@ -44,11 +48,9 @@ class Product {
   }
 
   unsubscribe(subscriber) {
-    this.#subscribers = this.#subscribers.filter((s) => s !== subscriber);
-  }
-
-  #notifyAll() {
-    this.#subscribers.forEach((subscriber) => subscriber.update(this));
+    this.#subscribers = this.#subscribers.filter(
+      (s) => s !== subscriber,
+    );
   }
 
   setStock(newStock) {
@@ -61,6 +63,12 @@ class Product {
     if (wasOutOfStock && newStock > 0) {
       this.#notifyAll();
     }
+  }
+
+  #notifyAll() {
+    this.#subscribers.forEach((subscriber) =>
+      subscriber.update(this),
+    );
   }
 }
 
