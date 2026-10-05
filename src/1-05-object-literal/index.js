@@ -7,7 +7,7 @@ const user = {
   email: "chris123@google.com",
   birthdate: "1992-03-21",
   buy(item) {
-    console.log(`${this.email} buys ${item.name}`);
+    console.log(`${user.email} buys ${item.name}`);
   },
 };
 
