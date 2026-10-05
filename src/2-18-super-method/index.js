@@ -1,5 +1,6 @@
-// 2-17. 부모 클래스 메서드 재사용하기
+// 2-18. 부모 클래스 메서드 재사용하기
 
+// 2장 09. 상속의 User
 class User {
   #email;
   #birthdate;
@@ -12,7 +13,6 @@ class User {
   get email() {
     return this.#email;
   }
-
   get birthdate() {
     return this.#birthdate;
   }
@@ -53,7 +53,12 @@ class PremiumUser extends User {
 }
 
 const item = { name: "스웨터", price: 30_000 };
-const pUser1 = new PremiumUser("chris123@google.com", "1992-03-21", 3, 0);
+const pUser1 = new PremiumUser(
+  "chris123@google.com",
+  "1992-03-21",
+  3,
+  0,
+);
 
-pUser1.buy(item);             // 출력: chris123@google.com buys 스웨터 (부모 buy가 실행됨)
-console.log(pUser1.point);   // 출력: 1500 (30_000 * 0.05)
+pUser1.buy(item); // 출력: chris123@google.com buys 스웨터 (부모 buy가 실행됨)
+console.log(pUser1.point); // 출력: 1500 (30_000 * 0.05)

@@ -24,3 +24,5 @@ console.log(user3.email); // 출력: alice@google.com
 user1.buy(item); // 출력: chris123@google.com buys 스웨터
 user2.buy(item); // 출력: jerry99@google.com buys 스웨터
 user3.buy(item); // 출력: alice@google.com buys 스웨터
+
+console.log(user1.buy === user2.buy); // 출력: false

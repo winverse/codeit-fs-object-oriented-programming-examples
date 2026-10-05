@@ -1,5 +1,6 @@
-// 2-11. super
+// 2-12. super
 
+// 2장 09. 상속의 User
 class User {
   #email;
   #birthdate;
@@ -12,7 +13,6 @@ class User {
   get email() {
     return this.#email;
   }
-
   get birthdate() {
     return this.#birthdate;
   }

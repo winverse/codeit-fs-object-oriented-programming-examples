@@ -1,5 +1,6 @@
-// 2-13. instanceof 연산자
+// 2-14. instanceof 연산자
 
+// 2장 09. 상속의 User와 PremiumUser
 class User {
   #email;
   #birthdate;
@@ -12,7 +13,6 @@ class User {
   get email() {
     return this.#email;
   }
-
   get birthdate() {
     return this.#birthdate;
   }
@@ -22,11 +22,12 @@ class User {
   }
 }
 
+// User를 상속합니다
 class PremiumUser extends User {
   #level;
 
   constructor(email, birthdate, level) {
-    super(email, birthdate);
+    super(email, birthdate); // 부모 클래스의 constructor를 실행합니다
     this.#level = level;
   }
 
@@ -39,16 +40,30 @@ class PremiumUser extends User {
   }
 }
 
+// ─────────────────────────────────────
+// 기본 사용법
+// ─────────────────────────────────────
 const user1 = new User("chris123@google.com", "1992-03-21");
 const user2 = new User("rachel@google.com", "1988-05-16");
 const user3 = new User("brian@google.com", "2005-11-25");
-const pUser1 = new PremiumUser("niceguy@google.com", "1989-12-07", 3);
-const pUser2 = new PremiumUser("helloMike@google.com", "1990-09-15", 2);
-const pUser3 = new PremiumUser("aliceKim@google.com", "2001-07-22", 5);
+const pUser1 = new PremiumUser(
+  "niceguy@google.com",
+  "1989-12-07",
+  3,
+);
+const pUser2 = new PremiumUser(
+  "helloMike@google.com",
+  "1990-09-15",
+  2,
+);
+const pUser3 = new PremiumUser(
+  "aliceKim@google.com",
+  "2001-07-22",
+  5,
+);
 
 const users = [user1, pUser1, user2, pUser2, user3, pUser3];
 
-// PremiumUser 인스턴스 여부 판별
 users.forEach((user) => {
   console.log(user instanceof PremiumUser);
 });
@@ -60,7 +75,6 @@ users.forEach((user) => {
 // false
 // true
 
-// instanceof로 확인한 뒤 호출하기
 users.forEach((user) => {
   if (user instanceof PremiumUser) {
     user.streamMusicForFree();
@@ -71,7 +85,9 @@ users.forEach((user) => {
 // Free music streaming for helloMike@google.com
 // Free music streaming for aliceKim@google.com
 
-// 자식은 부모로도 true
+// ─────────────────────────────────────
+// 부모 클래스에 대한 instanceof 결과
+// ─────────────────────────────────────
 users.forEach((user) => {
   console.log(user instanceof User);
 });
