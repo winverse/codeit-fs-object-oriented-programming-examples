@@ -42,14 +42,17 @@ class NotificationFactory {
   }
 }
 
-const channels = ["email", "sms", "push"];
-
-channels.forEach((channel) => {
+// 알림을 보내는 함수
+function sendOrderNotification(channel) {
   const notifier = NotificationFactory.create(channel);
   notifier.send("주문이 완료되었습니다.");
-});
+}
 
-// 출력:
-// [이메일] 주문이 완료되었습니다.
-// [SMS] 주문이 완료되었습니다.
-// [푸시] 주문이 완료되었습니다.
+function sendShippingNotification(channel) {
+  const notifier = NotificationFactory.create(channel);
+  notifier.send("배송이 시작되었습니다.");
+}
+
+sendOrderNotification("email"); // 출력: [이메일] 주문이 완료되었습니다.
+sendOrderNotification("sms"); // 출력: [SMS] 주문이 완료되었습니다.
+sendShippingNotification("push"); // 출력: [푸시] 배송이 시작되었습니다.
