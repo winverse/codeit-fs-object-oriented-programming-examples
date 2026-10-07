@@ -7,15 +7,15 @@ function createUser(email, birthdate) {
   // 1. 이메일을 담을 변수를 함수 안에 만듭니다.
   let _email;
 
-  // 2. _email을 읽고 바꾸는 getter와 setter를 가진 객체를 만듭니다.
+  // 2. _email을 읽고 바꾸는 메서드를 가진 객체를 만듭니다.
   const user = {
     birthdate,
 
-    get email() {
+    getEmail() {
       return _email;
     },
 
-    set email(address) {
+    setEmail(address) {
       if (!address.includes("@")) {
         throw new Error("invalid email address");
       }
@@ -23,8 +23,8 @@ function createUser(email, birthdate) {
     },
   };
 
-  // 3. 처음 전달한 이메일을 setter로 검증해 저장합니다.
-  user.email = email;
+  // 3. 처음 전달한 이메일을 setEmail()로 검증해 저장합니다.
+  user.setEmail(email);
   // 4. 완성된 객체를 반환합니다.
   return user;
 }
@@ -34,7 +34,7 @@ const closureUser = createUser(
   "1992-03-21",
 );
 
-console.log(closureUser.email); // 출력: chris123@google.com
+console.log(closureUser.getEmail()); // 출력: chris123@google.com
 console.log(closureUser._email); // 출력: undefined
 
 // ─────────────────────────────────────
@@ -50,15 +50,15 @@ function createUserWithPoint(email, birthdate) {
     _point += 1;
   }
 
-  // 3. birthdate, getter, buy를 담은 객체를 반환합니다.
+  // 3. birthdate와 getEmail·getPoint·buy 메서드를 담은 객체를 반환합니다.
   return {
     birthdate,
 
-    get email() {
+    getEmail() {
       return _email;
     },
 
-    get point() {
+    getPoint() {
       return _point;
     },
 
@@ -78,7 +78,7 @@ const user1 = createUserWithPoint(
 user1.buy(item); // 출력: chris123@google.com buys 스웨터
 user1.buy(item); // 출력: chris123@google.com buys 스웨터
 user1.buy(item); // 출력: chris123@google.com buys 스웨터
-console.log(user1.point); // 출력: 3
+console.log(user1.getPoint()); // 출력: 3
 
 try {
   user1.increasePoint(); // ❌ TypeError: user1.increasePoint is not a function

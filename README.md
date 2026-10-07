@@ -46,7 +46,7 @@ node src/2-12-super/error.js
 | 1장 | 09. 객체 만들기, 생성자 함수 | `src/1-09-constructor-function` |
 | 1장 | 11. 객체 만들기, 클래스 | `src/1-11-class` |
 | 2장 | 03. 추상화 | `src/2-03-abstraction` (`index.js`, `naming.js`) |
-| 2장 | 05. 캡슐화 | `src/2-05-encapsulation` (`index.js`, `getter-setter.js`, `private-field.js`, `get-set-methods.js`) |
+| 2장 | 05. 캡슐화 | `src/2-05-encapsulation` (`index.js`, `private-field.js`) |
 | 2장 | 07. 캡슐화 더 알아보기: 클로저(Closure)로 구현하기 | `src/2-07-encapsulation-closure` |
 | 2장 | 09. 상속 | `src/2-09-inheritance` (`index.js`, `extends.js`, `battle.js`) |
 | 2장 | 12. super | `src/2-12-super` |

@@ -34,10 +34,10 @@ class User {
     this.#role = role;
   }
 
-  get email() {
+  getEmail() {
     return this.#email;
   }
-  get role() {
+  getRole() {
     return this.#role;
   }
 
@@ -74,6 +74,6 @@ const restored = User.fromJSON(
   '{"email":"jerry99@google.com","birthdate":"1995-07-19","role":"normal"}',
 );
 
-console.log(normalUser.role); // 출력: normal
-console.log(adminUser.role); // 출력: admin
-console.log(restored.email); // 출력: jerry99@google.com
+console.log(normalUser.getRole()); // 출력: normal
+console.log(adminUser.getRole()); // 출력: admin
+console.log(restored.getEmail()); // 출력: jerry99@google.com

@@ -10,15 +10,15 @@ class User {
     this.#birthdate = birthdate;
   }
 
-  get email() {
+  getEmail() {
     return this.#email;
   }
-  get birthdate() {
+  getBirthdate() {
     return this.#birthdate;
   }
 
   buy(item) {
-    console.log(`${this.email} buys ${item.name}`);
+    console.log(`${this.getEmail()} buys ${item.name}`);
   }
 }
 
@@ -31,12 +31,14 @@ class PremiumUser extends User {
     this.#level = level;
   }
 
-  get level() {
+  getLevel() {
     return this.#level;
   }
 
   streamMusicForFree() {
-    console.log(`Free music streaming for ${this.email}`);
+    console.log(
+      `Free music streaming for ${this.getEmail()}`,
+    );
   }
 }
 

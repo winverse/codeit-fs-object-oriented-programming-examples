@@ -8,12 +8,12 @@ class User {
     this.#email = email;
   }
 
-  get email() {
+  getEmail() {
     return this.#email;
   }
 
   buy(item) {
-    return `${this.email} buys ${item.name}`;
+    return `${this.getEmail()} buys ${item.name}`;
   }
 }
 

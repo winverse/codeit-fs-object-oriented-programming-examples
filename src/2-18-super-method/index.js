@@ -10,15 +10,15 @@ class User {
     this.#birthdate = birthdate;
   }
 
-  get email() {
+  getEmail() {
     return this.#email;
   }
-  get birthdate() {
+  getBirthdate() {
     return this.#birthdate;
   }
 
   buy(item) {
-    console.log(`${this.email} buys ${item.name}`);
+    console.log(`${this.getEmail()} buys ${item.name}`);
   }
 }
 
@@ -32,11 +32,11 @@ class PremiumUser extends User {
     this.#point = point;
   }
 
-  get level() {
+  getLevel() {
     return this.#level;
   }
 
-  get point() {
+  getPoint() {
     return this.#point;
   }
 
@@ -48,7 +48,9 @@ class PremiumUser extends User {
   }
 
   streamMusicForFree() {
-    console.log(`Free music streaming for ${this.email}`);
+    console.log(
+      `Free music streaming for ${this.getEmail()}`,
+    );
   }
 }
 
@@ -61,4 +63,4 @@ const pUser1 = new PremiumUser(
 );
 
 pUser1.buy(item); // 출력: chris123@google.com buys 스웨터 (부모 buy가 실행됨)
-console.log(pUser1.point); // 출력: 1500 (30_000 * 0.05)
+console.log(pUser1.getPoint()); // 출력: 1500 (30_000 * 0.05)

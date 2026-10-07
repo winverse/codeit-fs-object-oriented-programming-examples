@@ -12,15 +12,15 @@ class User {
     this.#birthdate = birthdate;
   }
 
-  get email() {
+  getEmail() {
     return this.#email;
   }
-  get birthdate() {
+  getBirthdate() {
     return this.#birthdate;
   }
 
   buy(item) {
-    console.log(`${this.email} buys ${item.name}`);
+    console.log(`${this.getEmail()} buys ${item.name}`);
   }
 }
 
@@ -35,21 +35,23 @@ class PremiumUser {
     this.#level = level;
   }
 
-  get email() {
+  getEmail() {
     return this.#email;
   }
-  get birthdate() {
+  getBirthdate() {
     return this.#birthdate;
   }
-  get level() {
+  getLevel() {
     return this.#level;
   }
 
   buy(item) {
-    console.log(`${this.email} buys ${item.name}`); // User와 동일!
+    console.log(`${this.getEmail()} buys ${item.name}`); // User와 동일!
   }
 
   streamMusicForFree() {
-    console.log(`Free music streaming for ${this.email}`);
+    console.log(
+      `Free music streaming for ${this.getEmail()}`,
+    );
   }
 }

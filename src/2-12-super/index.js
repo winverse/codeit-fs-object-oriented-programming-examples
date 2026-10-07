@@ -10,15 +10,15 @@ class User {
     this.#birthdate = birthdate;
   }
 
-  get email() {
+  getEmail() {
     return this.#email;
   }
-  get birthdate() {
+  getBirthdate() {
     return this.#birthdate;
   }
 
   buy(item) {
-    console.log(`${this.email} buys ${item.name}`);
+    console.log(`${this.getEmail()} buys ${item.name}`);
   }
 }
 
@@ -32,12 +32,14 @@ class PremiumUser extends User {
     this.#level = level;
   }
 
-  get level() {
+  getLevel() {
     return this.#level;
   }
 
   streamMusicForFree() {
-    console.log(`Free music streaming for ${this.email}`);
+    console.log(
+      `Free music streaming for ${this.getEmail()}`,
+    );
   }
 }
 
@@ -48,8 +50,8 @@ const pUser1 = new PremiumUser(
   3,
 );
 
-console.log(pUser1.email); // 출력: chris123@google.com (부모 클래스의 constructor가 설정)
-console.log(pUser1.birthdate); // 출력: 1992-03-21 (부모 클래스의 constructor가 설정)
-console.log(pUser1.level); // 출력: 3 (자식 클래스의 constructor가 설정)
+console.log(pUser1.getEmail()); // 출력: chris123@google.com (부모 클래스의 constructor가 설정)
+console.log(pUser1.getBirthdate()); // 출력: 1992-03-21 (부모 클래스의 constructor가 설정)
+console.log(pUser1.getLevel()); // 출력: 3 (자식 클래스의 constructor가 설정)
 pUser1.buy(item); // 출력: chris123@google.com buys 스웨터 (부모에서 상속)
 pUser1.streamMusicForFree(); // 출력: Free music streaming for chris123@google.com

@@ -7,7 +7,7 @@ class EmailSubscriber {
   }
   update(product) {
     console.log(
-      `[이메일 → ${this.email}] "${product.name}" 재입고 알림`,
+      `[이메일 → ${this.email}] "${product.getName()}" 재입고 알림`,
     );
   }
 }
@@ -18,7 +18,7 @@ class SmsSubscriber {
   }
   update(product) {
     console.log(
-      `[SMS → ${this.phone}] "${product.name}" 재입고 알림`,
+      `[SMS → ${this.phone}] "${product.getName()}" 재입고 알림`,
     );
   }
 }
@@ -35,11 +35,11 @@ class Product {
     this.#subscribers = [];
   }
 
-  get name() {
+  getName() {
     return this.#name;
   }
 
-  get stock() {
+  getStock() {
     return this.#stock;
   }
 

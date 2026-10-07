@@ -10,15 +10,15 @@ class User {
     this.#birthdate = birthdate;
   }
 
-  get email() {
+  getEmail() {
     return this.#email;
   }
-  get birthdate() {
+  getBirthdate() {
     return this.#birthdate;
   }
 
   buy(item) {
-    console.log(`${this.email} buys ${item.name}`);
+    console.log(`${this.getEmail()} buys ${item.name}`);
   }
 }
 
@@ -33,19 +33,21 @@ class PremiumUser extends User {
     this.#level = level;
   }
 
-  get level() {
+  getLevel() {
     return this.#level;
   }
 
   buy(item) {
     // 부모의 buy를 오버라이딩합니다
     console.log(
-      `${this.email} buys ${item.name} with a 5% discount`,
+      `${this.getEmail()} buys ${item.name} with a 5% discount`,
     );
   }
 
   streamMusicForFree() {
-    console.log(`Free music streaming for ${this.email}`);
+    console.log(
+      `Free music streaming for ${this.getEmail()}`,
+    );
   }
 }
 
@@ -72,19 +74,21 @@ class PremiumUserWithSeparateMethod extends User {
     this.#level = level;
   }
 
-  get level() {
+  getLevel() {
     return this.#level;
   }
 
   buyWithDiscount(item) {
     // ← buy가 아닌 다른 이름
     console.log(
-      `${this.email} buys ${item.name} with a 5% discount`,
+      `${this.getEmail()} buys ${item.name} with a 5% discount`,
     );
   }
 
   streamMusicForFree() {
-    console.log(`Free music streaming for ${this.email}`);
+    console.log(
+      `Free music streaming for ${this.getEmail()}`,
+    );
   }
 }
 
