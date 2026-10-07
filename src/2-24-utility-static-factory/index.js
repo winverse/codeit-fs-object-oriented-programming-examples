@@ -34,9 +34,6 @@ class User {
     this.#role = role;
   }
 
-  getEmail() {
-    return this.#email;
-  }
   getRole() {
     return this.#role;
   }
@@ -50,16 +47,6 @@ class User {
   static createAdmin(email, birthdate) {
     return new User(email, birthdate, "admin");
   }
-
-  // JSON 데이터에서 User 객체를 복원하는 static factory method
-  static fromJSON(json) {
-    const parsed = JSON.parse(json);
-    return new User(
-      parsed.email,
-      parsed.birthdate,
-      parsed.role,
-    );
-  }
 }
 
 const normalUser = User.createNormal(
@@ -70,10 +57,6 @@ const adminUser = User.createAdmin(
   "alice@google.com",
   "1993-12-24",
 );
-const restored = User.fromJSON(
-  '{"email":"jerry99@google.com","birthdate":"1995-07-19","role":"normal"}',
-);
 
 console.log(normalUser.getRole()); // 출력: normal
 console.log(adminUser.getRole()); // 출력: admin
-console.log(restored.getEmail()); // 출력: jerry99@google.com
