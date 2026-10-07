@@ -21,5 +21,15 @@ export const examplePaths = [
   "src/3-02-singleton/index.js",
   "src/3-05-simple-factory/index.js",
   "src/3-08-strategy/index.js",
-  "src/3-11-observer/index.js"
+  "src/3-11-observer/index.js",
+  "src/4-02-single-responsibility/index.js",
+  "src/4-02-single-responsibility/applied.js",
+  "src/4-05-open-closed/index.js",
+  "src/4-05-open-closed/applied.js",
+  "src/4-08-liskov-substitution/index.js",
+  "src/4-08-liskov-substitution/applied.js",
+  "src/4-11-interface-segregation/index.js",
+  "src/4-11-interface-segregation/applied.js",
+  "src/4-14-dependency-inversion/index.js",
+  "src/4-14-dependency-inversion/applied.js"
 ];

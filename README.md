@@ -59,3 +59,8 @@ node src/2-12-super/error.js
 | 3장 | 05. 단순 팩토리 패턴, Simple Factory | `src/3-05-simple-factory` |
 | 3장 | 08. 전략 패턴, Strategy | `src/3-08-strategy` |
 | 3장 | 11. 옵저버 패턴, Observer | `src/3-11-observer` |
+| 4장 | 02. 단일 책임 원칙, Single Responsibility Principle | `src/4-02-single-responsibility` (`index.js`, `applied.js`) |
+| 4장 | 05. 개방 폐쇄 원칙, Open-Closed Principle | `src/4-05-open-closed` (`index.js`, `applied.js`) |
+| 4장 | 08. 리스코프 치환 원칙, Liskov Substitution Principle | `src/4-08-liskov-substitution` (`index.js`, `applied.js`) |
+| 4장 | 11. 인터페이스 분리 원칙, Interface Segregation Principle | `src/4-11-interface-segregation` (`index.js`, `applied.js`) |
+| 4장 | 14. 의존성 역전 원칙, Dependency Inversion Principle | `src/4-14-dependency-inversion` (`index.js`, `applied.js`) |
