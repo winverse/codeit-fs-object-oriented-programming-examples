@@ -5,21 +5,21 @@
 // ─────────────────────────────────────
 function createUser(email, birthdate) {
   // 1. 이메일을 담을 변수를 함수 안에 만듭니다.
-  let _email;
+  let savedEmail;
 
-  // 2. _email을 읽고 바꾸는 메서드를 가진 객체를 만듭니다.
+  // 2. savedEmail을 읽고 바꾸는 메서드를 가진 객체를 만듭니다.
   const user = {
     birthdate,
 
     getEmail() {
-      return _email;
+      return savedEmail;
     },
 
     setEmail(address) {
       if (!address.includes("@")) {
         throw new Error("invalid email address");
       }
-      _email = address;
+      savedEmail = address;
     },
   };
 
@@ -35,19 +35,19 @@ const closureUser = createUser(
 );
 
 console.log(closureUser.getEmail()); // 출력: chris123@google.com
-console.log(closureUser._email); // 출력: undefined
+console.log(closureUser.savedEmail); // 출력: undefined
 
 // ─────────────────────────────────────
 // 내부 함수까지 숨기기
 // ─────────────────────────────────────
 function createUserWithPoint(email, birthdate) {
   // 1. 이메일과 포인트를 함수 안 변수에 둡니다.
-  const _email = email;
-  let _point = 0;
+  const savedEmail = email;
+  let point = 0;
 
   // 2. 포인트를 올리는 내부 전용 함수를 만듭니다.
   function increasePoint() {
-    _point += 1;
+    point += 1;
   }
 
   // 3. birthdate와 getEmail·getPoint·buy 메서드를 담은 객체를 반환합니다.
@@ -55,15 +55,15 @@ function createUserWithPoint(email, birthdate) {
     birthdate,
 
     getEmail() {
-      return _email;
+      return savedEmail;
     },
 
     getPoint() {
-      return _point;
+      return point;
     },
 
     buy(item) {
-      console.log(`${_email} buys ${item.name}`);
+      console.log(`${savedEmail} buys ${item.name}`);
       increasePoint();
     },
   };
