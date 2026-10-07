@@ -1,6 +1,6 @@
-// 2-17. instanceof 연산자
+// 2-15. instanceof 연산자
 
-// 2장 11. 상속의 User와 PremiumUser
+// 2장 09. 상속의 User와 PremiumUser
 class User {
   #email;
   #birthdate;

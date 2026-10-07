@@ -33,7 +33,7 @@ node src/1-03-oop-intro/index.js
 `super()`를 생략했을 때의 오류는 별도 파일로 확인합니다. 이 파일은 의도한 `ReferenceError`로 종료됩니다.
 
 ```bash
-node src/2-14-super/error.js
+node src/2-12-super/error.js
 ```
 
 ## 예제 구성
@@ -47,15 +47,14 @@ node src/2-14-super/error.js
 | 1장 | 14. 객체 만들기, 클래스 | `src/1-14-class` |
 | 2장 | 03. 추상화 | `src/2-03-abstraction` (`index.js`, `naming.js`) |
 | 2장 | 06. 캡슐화 | `src/2-06-encapsulation` (`index.js`, `private-field.js`) |
-| 2장 | 08. 캡슐화 더 알아보기: 클로저(Closure)로 구현하기 | `src/2-08-encapsulation-closure` |
-| 2장 | 11. 상속 | `src/2-11-inheritance` (`index.js`, `extends.js`, `battle.js`) |
-| 2장 | 14. super | `src/2-14-super` |
-| 2장 | 17. instanceof 연산자 | `src/2-17-instanceof` |
-| 2장 | 19. 다형성 | `src/2-19-polymorphism` |
-| 2장 | 21. 부모 클래스 메서드 재사용하기 | `src/2-21-super-method` |
-| 2장 | 24. static 프로퍼티와 static 메서드 | `src/2-24-static` |
-| 2장 | 26. 유틸리티 클래스와 static factory method | `src/2-26-utility-static-factory` |
-| 2장 | 28. 객체 지향 핵심 개념 | `src/2-28-summary` |
+| 2장 | 09. 상속 | `src/2-09-inheritance` (`index.js`, `extends.js`, `battle.js`) |
+| 2장 | 12. super | `src/2-12-super` |
+| 2장 | 15. instanceof 연산자 | `src/2-15-instanceof` |
+| 2장 | 17. 다형성 | `src/2-17-polymorphism` |
+| 2장 | 19. 부모 클래스 메서드 재사용하기 | `src/2-19-super-method` |
+| 2장 | 22. static 프로퍼티와 static 메서드 | `src/2-22-static` |
+| 2장 | 24. 유틸리티 클래스와 static factory method | `src/2-24-utility-static-factory` |
+| 2장 | 26. 객체 지향 핵심 개념 | `src/2-26-summary` |
 | 3장 | 02. 싱글턴 패턴, Singleton | `src/3-02-singleton` |
 | 3장 | 05. 단순 팩토리 패턴, Simple Factory | `src/3-05-simple-factory` |
 | 3장 | 08. 전략 패턴, Strategy | `src/3-08-strategy` |

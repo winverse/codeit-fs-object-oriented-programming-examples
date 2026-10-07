@@ -1,4 +1,4 @@
-// 2-26. 유틸리티 클래스와 static factory method
+// 2-24. 유틸리티 클래스와 static factory method
 
 // ─────────────────────────────────────
 // 유틸리티 클래스: Validator

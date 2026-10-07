@@ -1,6 +1,6 @@
-// 2-19. 다형성
+// 2-17. 다형성
 
-// 2장 11. 상속의 User
+// 2장 09. 상속의 User
 class User {
   #email;
   #birthdate;

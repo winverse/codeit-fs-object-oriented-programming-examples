@@ -14,10 +14,10 @@ for (const examplePath of examplePaths) {
   });
 }
 
-test("src/2-14-super/error.js는 super() 생략 오류를 재현", () => {
+test("src/2-12-super/error.js는 super() 생략 오류를 재현", () => {
   const result = spawnSync(
     process.execPath,
-    ["src/2-14-super/error.js"],
+    ["src/2-12-super/error.js"],
     { encoding: "utf8" },
   );
 

@@ -1,6 +1,5 @@
-// 2-14. super
+// 2-09. extends로 상속받기
 
-// 2장 11. 상속의 User
 class User {
   #email;
   #birthdate;
@@ -22,13 +21,12 @@ class User {
   }
 }
 
+// User를 상속합니다
 class PremiumUser extends User {
   #level;
 
   constructor(email, birthdate, level) {
-    // 1. 부모 클래스의 constructor를 먼저 호출해 email, birthdate 값을 그대로 넘깁니다.
-    super(email, birthdate);
-    // 2. 그다음 자식 클래스의 고유 상태를 설정합니다.
+    super(email, birthdate); // 부모 클래스의 constructor를 실행합니다
     this.#level = level;
   }
 
@@ -50,8 +48,5 @@ const pUser1 = new PremiumUser(
   3,
 );
 
-console.log(pUser1.getEmail()); // 출력: chris123@google.com (부모 클래스의 constructor가 설정)
-console.log(pUser1.getBirthdate()); // 출력: 1992-03-21 (부모 클래스의 constructor가 설정)
-console.log(pUser1.getLevel()); // 출력: 3 (자식 클래스의 constructor가 설정)
-pUser1.buy(item); // 출력: chris123@google.com buys 스웨터 (부모에서 상속)
+pUser1.buy(item); // 출력: chris123@google.com buys 스웨터
 pUser1.streamMusicForFree(); // 출력: Free music streaming for chris123@google.com
