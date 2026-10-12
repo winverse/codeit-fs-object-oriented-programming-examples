@@ -1,26 +1,6 @@
 // 1-05. 객체 만들기, 객체 리터럴
 
 // ─────────────────────────────────────
-// 기본 객체 리터럴
-// ─────────────────────────────────────
-const user = {
-  email: "chris123@google.com",
-  birthdate: "1992-03-21",
-  buy(item) {
-    console.log(`${user.email} buys ${item.name}`);
-  },
-};
-
-const item = {
-  name: "스웨터",
-  price: 30_000,
-};
-
-console.log(user.email); // 출력: chris123@google.com
-console.log(user.birthdate); // 출력: 1992-03-21
-user.buy(item); // 출력: chris123@google.com buys 스웨터
-
-// ─────────────────────────────────────
 // this를 활용한 함수 재사용
 // ─────────────────────────────────────
 function introduce() {

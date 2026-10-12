@@ -34,7 +34,7 @@ node src/2-12-super-error.js
 
 | 장 | 항목 | 경로 |
 | --- | --- | --- |
-| 1장 | 03. 객체 지향 프로그래밍 | `src/1-03-oop-intro.js` |
+| 1장 | 03. 절차 지향과 객체 지향 | `src/1-03-oop-intro.js` |
 | 1장 | 05. 객체 만들기, 객체 리터럴 | `src/1-05-object-literal.js` |
 | 1장 | 08. 객체 만들기, 팩토리 함수 | `src/1-08-factory-function.js` |
 | 1장 | 11. 객체 만들기, 생성자 함수 | `src/1-11-constructor-function.js` |
