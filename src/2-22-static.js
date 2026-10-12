@@ -14,7 +14,7 @@
   }
 
   console.log(MathUtils.PI); // 출력: 3.14
-  console.log(MathUtils.getCircleArea(5)); // 출력: 78.5 (3.14 * 5 * 5)
+  console.log(MathUtils.getCircleArea(5)); // 출력: 78.5
 
   // ─────────────────────────────────────
   // 인스턴스로 static 프로퍼티와 static 메서드에 접근하기

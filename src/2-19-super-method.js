@@ -63,6 +63,6 @@
     0,
   );
 
-  pUser1.buy(item); // 출력: chris123@google.com buys 스웨터 (부모 buy가 실행됨)
-  console.log(pUser1.getPoint()); // 출력: 1500 (30_000 * 0.05)
+  pUser1.buy(item); // 출력: chris123@google.com buys 스웨터
+  console.log(pUser1.getPoint()); // 출력: 1500
 }

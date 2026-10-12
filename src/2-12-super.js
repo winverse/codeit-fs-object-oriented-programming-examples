@@ -51,9 +51,9 @@
     3,
   );
 
-  console.log(pUser1.getEmail()); // 출력: chris123@google.com (부모 클래스의 constructor가 설정)
-  console.log(pUser1.getBirthdate()); // 출력: 1992-03-21 (부모 클래스의 constructor가 설정)
-  console.log(pUser1.getLevel()); // 출력: 3 (자식 클래스의 constructor가 설정)
-  pUser1.buy(item); // 출력: chris123@google.com buys 스웨터 (부모에서 상속)
+  console.log(pUser1.getEmail()); // 출력: chris123@google.com
+  console.log(pUser1.getBirthdate()); // 출력: 1992-03-21
+  console.log(pUser1.getLevel()); // 출력: 3
+  pUser1.buy(item); // 출력: chris123@google.com buys 스웨터
   pUser1.streamMusicForFree(); // 출력: Free music streaming for chris123@google.com
 }
