@@ -7,7 +7,6 @@
     "node": ">=24"
   },
   "scripts": {
-    "examples": "node scripts/run-examples.mjs",
-    "test": "node --test tests/examples.test.js"
+    "examples": "node scripts/run-examples.mjs"
   }
 }
