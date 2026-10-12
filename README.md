@@ -48,7 +48,6 @@ node src/2-12-super-error.js
 | 2장 | 19. 부모 클래스 메서드 재사용하기 | `src/2-19-super-method.js` |
 | 2장 | 22. static 프로퍼티와 static 메서드 | `src/2-22-static.js` |
 | 2장 | 24. 유틸리티 클래스와 static factory method | `src/2-24-utility-static-factory.js` |
-| 2장 | 26. 객체 지향 핵심 개념 | `src/2-26-summary.js` |
 | 3장 | 02. 싱글턴 패턴, Singleton | `src/3-02-singleton.js` |
 | 3장 | 05. 단순 팩토리 패턴, Simple Factory | `src/3-05-simple-factory.js` |
 | 3장 | 08. 전략 패턴, Strategy | `src/3-08-strategy.js` |

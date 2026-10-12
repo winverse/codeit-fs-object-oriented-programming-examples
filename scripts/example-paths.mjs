@@ -17,7 +17,6 @@ export const examplePaths = [
   "src/2-19-super-method.js",
   "src/2-22-static.js",
   "src/2-24-utility-static-factory.js",
-  "src/2-26-summary.js",
   "src/3-02-singleton.js",
   "src/3-05-simple-factory.js",
   "src/3-08-strategy.js",
